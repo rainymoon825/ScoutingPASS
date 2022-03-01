@@ -19,7 +19,6 @@ var config_data = `
           "ef":"Eighth-Final<br>",
           "qf":"Quarter-Final<br>",
           "sf":"Semi-Final<br>",
-          "f":"Final"
         },
         "defaultValue":"qm",
         "required":"true"
