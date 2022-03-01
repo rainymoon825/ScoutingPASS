@@ -161,12 +161,6 @@ var config_data = `
         "title": "Started climb before EndGame",
         "type":"bool"
       },
-      "Num of Robots Climbed": {
-        "code":"cn",
-        "title": "# of alliance bots climbed",
-        "type":"counter"
-      }
-    },
     "postmatch": {
       "Driver Skill": {
         "code":"ds",
@@ -191,11 +185,6 @@ var config_data = `
           "x":"Not Observed"
         },
         "defaultValue":"x"
-      },
-      "Shot enemy balls away?": {
-        "code":"ba",
-        "title": "Shot enemy balls away?",
-        "type":"bool"
       },
       "Died/Tipped": {
         "code":"d",
