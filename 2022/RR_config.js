@@ -5,14 +5,21 @@ var config_data = `
   "elements":{
     "prematch": {
       "Scouter Initials": {
-        "code":"ScouterInitialss",
+        "code":"s",
         "type":"scouter",
         "size":5,
         "maxSize":5,
         "required":"true"
       },
+      "Event":{
+        "code":"e",
+        "type":"event",
+        "defaultValue":"2022CPR",
+        "required":"true",
+        "disabled":"true"
+      },
       "Match Level":{
-        "code":"MatchLevell",
+        "code":"l",
         "type":"level",
         "choices":{
           "qm":"Quals<br>",
@@ -24,14 +31,14 @@ var config_data = `
         "required":"true"
       },
       "Match #":{
-        "code":"MatchNumm",
+        "code":"m",
         "type":"match",
         "min":1,
         "max":100,
         "required":"true"
       },
      "Robot": {
-        "code":"Robott",
+        "code":"r",
         "type":"robot",
         "choices":{
           "r1":"Red-1",
@@ -50,16 +57,15 @@ var config_data = `
         "max":99999
       },
     "Auto Start Position": {
-        "code":"StartPos",
+        "code":"asp",
         "title": "Auto Start Position",
-        "type":"field_image",
-        "filename":"2022/field_image.png"
+        "type":"text",
       }
     },
     "auton": {
       "Tarmac": {
-        "code":"Tarmacc?",
-        "title": "Taxied?",
+        "code":"at",
+        "title": "Exited Tarmac?",
         "type":"bool"
       },
       "Upper Cargo Scored": {
@@ -73,8 +79,8 @@ var config_data = `
         "type":"counter"
       },
       "Human": {
-        "code":"Human?",
-        "title": "Picked up more cargo?",
+        "code":"h",
+        "title": "Human player present?",
         "type":"bool"
       }
     },
@@ -90,17 +96,17 @@ var config_data = `
         "type":"counter"
       },
       "Was Defended": {
-        "code":"Defended?",
+        "code":"wd",
         "title": "Was Defended",
         "type":"bool"
       },
-      "Wallbot?": {
-        "code":"Wallbott",
+      "Wallbot": {
+        "code":"wbot",
         "title": "Wallbot?",
         "type":"bool"
       },
       "Ball Cycle Time": {
-        "code":"ballcycletime",
+        "code":"bct",
         "title": "Ball Cycle Time",
         "type":"counter",
         "defaultValue":"0"
@@ -108,8 +114,7 @@ var config_data = `
       "Shooting Spot": {
         "code":"ss",
         "title": "Shooting Spot",
-        "type":"field_image",
-        "filename":"2022/field_image.png"
+        "type":"text",
       }
     },
     "endgame": {
