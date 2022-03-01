@@ -26,6 +26,7 @@ var config_data = `
           "ef":"Eighth-Final<br>",
           "qf":"Quarter-Final<br>",
           "sf":"Semi-Final<br>",
+          "f":"Final"
         },
         "defaultValue":"qm",
         "required":"true"
@@ -56,16 +57,18 @@ var config_data = `
         "min":1,
         "max":99999
       },
+    
     "Auto Start Position": {
-        "code":"asp",
+        "code":"as",
         "title": "Auto Start Position",
-        "type":"text",
+        "type":"field_image",
+        "filename":"2022/field_image.png"
       }
     },
     "auton": {
-      "Tarmac": {
+      "Taxi": {
         "code":"at",
-        "title": "Exited Tarmac?",
+        "title": "Taxied?",
         "type":"bool"
       },
       "Upper Cargo Scored": {
@@ -78,9 +81,9 @@ var config_data = `
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
-      "Human": {
-        "code":"h",
-        "title": "Human player present?",
+      "Auto Aquired Cargo": {
+        "code":"ac",
+        "title": "Picked up more cargo?",
         "type":"bool"
       }
     },
@@ -100,21 +103,28 @@ var config_data = `
         "title": "Was Defended",
         "type":"bool"
       },
-      "Wallbot": {
-        "code":"wbot",
+      "Wallbot?": {
+        "code":"wbt",
         "title": "Wallbot?",
         "type":"bool"
       },
-      "Ball Cycle Time": {
-        "code":"bct",
-        "title": "Ball Cycle Time",
-        "type":"counter",
-        "defaultValue":"0"
+      "Cargo Intake From": {
+        "code":"cif",
+        "title": "Cargo Intake From",
+        "type":"radio",
+        "choices":{
+          "t":"Terminal<br>",
+          "g":"Ground<br>",
+          "b":"Both<br>",
+          "x":"Not Attempted"
+        },
+        "defaultValue":"x"
       },
       "Shooting Spot": {
         "code":"ss",
         "title": "Shooting Spot",
-        "type":"text",
+        "type":"field_image",
+        "filename":"2022/field_image.png"
       }
     },
     "endgame": {
