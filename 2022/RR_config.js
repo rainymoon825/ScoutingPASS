@@ -5,21 +5,14 @@ var config_data = `
   "elements":{
     "prematch": {
       "Scouter Initials": {
-        "code":"s",
+        "code":"ScouterInitialss",
         "type":"scouter",
         "size":5,
         "maxSize":5,
         "required":"true"
       },
-      "Event":{
-        "code":"e",
-        "type":"event",
-        "defaultValue":"2022CPR",
-        "required":"true",
-        "disabled":"true"
-      },
       "Match Level":{
-        "code":"l",
+        "code":"MatchLevell",
         "type":"level",
         "choices":{
           "qm":"Quals<br>",
@@ -32,14 +25,14 @@ var config_data = `
         "required":"true"
       },
       "Match #":{
-        "code":"m",
+        "code":"MatchNumm",
         "type":"match",
         "min":1,
         "max":100,
         "required":"true"
       },
      "Robot": {
-        "code":"r",
+        "code":"Robott",
         "type":"robot",
         "choices":{
           "r1":"Red-1",
@@ -58,15 +51,15 @@ var config_data = `
         "max":99999
       },
     "Auto Start Position": {
-        "code":"as",
+        "code":"StartPos",
         "title": "Auto Start Position",
         "type":"field_image",
         "filename":"2022/field_image.png"
       }
     },
     "auton": {
-      "Taxi": {
-        "code":"at",
+      "Tarmac": {
+        "code":"Tarmacc?",
         "title": "Taxied?",
         "type":"bool"
       },
@@ -80,8 +73,8 @@ var config_data = `
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
-      "Auto Aquired Cargo": {
-        "code":"ac",
+      "Human": {
+        "code":"Human?",
         "title": "Picked up more cargo?",
         "type":"bool"
       }
@@ -98,26 +91,20 @@ var config_data = `
         "type":"counter"
       },
       "Was Defended": {
-        "code":"wd",
+        "code":"Defended?",
         "title": "Was Defended",
         "type":"bool"
       },
       "Wallbot?": {
-        "code":"wbt",
+        "code":"Wallbott",
         "title": "Wallbot?",
         "type":"bool"
       },
-      "Cargo Intake From": {
-        "code":"cif",
-        "title": "Cargo Intake From",
-        "type":"radio",
-        "choices":{
-          "t":"Terminal<br>",
-          "g":"Ground<br>",
-          "b":"Both<br>",
-          "x":"Not Attempted"
-        },
-        "defaultValue":"x"
+      "Ball Cycle Time": {
+        "code":"ballcycletime",
+        "title": "Ball Cycle Time",
+        "type":"counter",
+        "defaultValue":"0"
       },
       "Shooting Spot": {
         "code":"ss",
